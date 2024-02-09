@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "capture-it";
+    src: url(../fonts/capture_it/Capture\ it.ttf);
+}
+
+@font-face {
+    font-family: "ag-stencil";
+    src: url(../fonts/ag_stencil/AG-Stencil.ttf);
+}
+
+@font-face {
+    font-family: "army-rust";
+    src: url(../fonts/army_rust/ARMY\ RUST.ttf);
+}
+
+@font-face {
+    font-family: "monofonto";
+    src: url(../fonts/simple_print/Simple\ Print.ttf);
+}
+
+@font-face {
+    font-family: "red-hands";
+    src: url(../fonts/kg_red_hands/KGRedHands.ttf);
+}
+
+@font-face {
+    font-family: "simple";
+    src: url(../fonts/simple_print/Simple\ Print.ttf);
+}
+
+header {
+    background-color: rgba(38,50,56,255);
+    border-top: black 15px solid;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    font-weight: 100;
+    color: lightgray;
+    font-family: "army-rust";
+}
+
+img {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.headermedia {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: "red-hands";
+    color: white;
+    width: 20%;
+    float: left;
+    text-align: center;
+    background-color: rgba(38,50,56,255);
+    margin: 0;
+    padding: 15px;
+    font-size:medium;
+    font-weight: 100;
+    border-bottom: black 4px solid;
+}
+
+#menuoption {
+    color: rgba(236,181,68,255)
+}
+
+main {
+    margin-bottom: 100px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration:underline;
+}
+
+main p {
+    font-family: "simple";
+    font-size: 40px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.tutoriales {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tutorialframe {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 20px;
+}
+
+footer {
+    position:fixed;
+    bottom: 0%;
+    background-color: rgba(38,50,56,255);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    font-family: "red-hands";
+    font-weight: 100;
+}
+
+.footer p {
+    color: white;
+    text-align: right;
+    text-decoration:none!important;
+}
+/*Esto sirve para hacer que la página se redimensione cuando se haga más pequeña
+y así adaptarla a pantallas más pequeñas, nivel 1*/
+
+@media (max-width: 1115px){
+    .maintext1 {
+        margin-top: 200px;
+    }
+}
+
+@media (min-width:827px) and (max-width: 870px){
+    nav a {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        float: left;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    footer {
+        bottom: 0;
+        position: fixed;
+        margin-bottom: 0;
+        margin-top: 100px;
+    }
+}
+
+/*Esto sirve para hacer que la página se redimensione cuando se haga más pequeña
+y así adaptarla a pantallas más pequeñas, nivel 2*/
+
+@media (min-width:600px) and (max-width: 827px){
+    nav a {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        float: left;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    footer {
+        bottom: 0;
+        position: fixed;
+        margin-bottom: 0;
+        margin-top: 150px;
+    }
+
+    .tutoriales {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Esto sirve para hacer que la página se redimensione cuando se haga más pequeña
+y así adaptarla a pantallas más pequeñas, nivel 3*/
+
+@media (min-width:300px) and (max-width: 600px){
+    nav a {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        float: left;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    footer {
+        bottom: 0;
+        position: fixed;
+        margin-bottom: 0;
+        margin-top: 100px;
+    }
+    
+    .tutoriales {
+        grid-template-columns: 1fr;
+    }
+}
+

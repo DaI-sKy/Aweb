@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/quejas.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <title>War Thunder Wiki</title>
+    <script type="text/javascript" src="../js/quejas.js"></script>
+</head>
+<body>
+    <header>
+        <div class="headermedia">
+            <div class="headerimg">
+                <img src="../images/logo2.png" alt="logo">
+            </div>
+            <div class="headertext">
+                <h1>War Thunder Wiki</h1>
+            </div>
+        </div>
+        <nav class="indexmenu">
+            <a href="../index.html">Página principal</a>
+            <a href="../html/tutoriales.html">Tutoriales</a>
+            <a href="../html/aboutme.html">Sobre mi</a>
+            <a href="../html/quejas.html" id="menuoption">Quejas</a>
+            <a href="../html/eventos.html">Eventos</a>
+        </nav>
+    </header>
+    <main>
+        <p>¿Tienes alguna queja? ¡Puede hacérmelo saber en el siguiente formulario!</p>
+        <form action="../database/quejas.db" method="post" class="form" target="_self">
+            <fieldset class="quejas">
+                <input id="input1" type="text" placeholder="Su nombre" name="nombre">
+                <textarea id="input2" rows="10" max-cols="40" placeholder="Defina su problema" name="problema"></textarea>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="footer">
+            <a href="https://warthunder.com/en/play4free/?r=sem_20273611354_151832469084_661987344190_kwd-42711071168&placement=&gad_source=1&gclid=CjwKCAiA8NKtBhBtEiwAq5aX2AikV9VCIJavQUkk3reU_jR9D4wwWWJZIGGN95KeyiCVtkq-F2M7whoCX-kQAvD_BwE#/"><p>¡Juega ya!</p></a>
+        </div>
+    </footer>
+</body>
+</html>

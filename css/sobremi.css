@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "capture-it";
+    src: url(../fonts/capture_it/Capture\ it.ttf);
+}
+
+@font-face {
+    font-family: "ag-stencil";
+    src: url(../fonts/ag_stencil/AG-Stencil.ttf);
+}
+
+@font-face {
+    font-family: "army-rust";
+    src: url(../fonts/army_rust/ARMY\ RUST.ttf);
+}
+
+@font-face {
+    font-family: "camouflage";
+    src: url(../fonts/camouflage/CamouflageD.ttf);
+}
+
+@font-face {
+    font-family: "red-hands";
+    src: url(../fonts/kg_red_hands/KGRedHands.ttf);
+}
+
+header {
+    background-color: rgba(38,50,56,255);
+    border-top: black 15px solid;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    font-weight: 100;
+    color: lightgray;
+    font-family: "army-rust";
+}
+
+img {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.headermedia {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: "red-hands";
+    color: white;
+    width: 20%;
+    float: left;
+    text-align: center;
+    background-color: rgba(38,50,56,255);
+    margin: 0;
+    padding: 15px;
+    font-size:medium;
+    font-weight: 100;
+    border-bottom: black 4px solid;
+}
+
+#menuoption {
+    color: rgba(236,181,68,255)
+}
+
+nav a:hover {
+    text-decoration:underline;
+}
+
+main {
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+main p, main h2 {
+    align-items: center;
+    width: 90%;
+    padding: 0;
+    margin: auto;
+}
+
+main p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: red;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: rgba(38,50,56,255);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    font-family: "red-hands";
+    font-weight: 100;
+}
+
+.footer p {
+    color: white;
+    text-align: right;
+    text-decoration:none!important;
+}
+
+.fav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    align-items: center;
+}
+
+.fav img {
+    width: 80%;
+    transition: -webkit-transform 0.25s ease;
+    transition: transform 0.25 ease;
+}
+
+.fav img:active {
+    --webkit-transform: scale(3);
+    transform: scale(3)
+}
+
+.mapa {
+    width: 50%;
+    height: 200px;
+    margin-left: 20px;
+}
+
+.vids {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.vids video {
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+}
+
+table {
+    max-width: 100%;
+    padding: 5%;
+    font-size: small;
+    border-collapse: collapse;
+    border: white 1px solid;
+    margin: auto;
+}
+
+table td {
+    height: 80px;
+    border: white 1px solid;
+    margin: auto;
+    text-align: justify;
+}
+
+table caption {
+    font-size: 50px;
+}
+
+.color1 {
+    background-color: lightblue;
+    width: 100px;
+}
+
+.emoji {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.emoji p {
+    font-size: 35px;
+}
+
+.color2 {
+    background-color: darkcyan;
+}
+
+/*Esto sirve para hacer que la página se redimensione cuando se haga más pequeña
+y así adaptarla a pantallas más pequeñas, nivel 1*/
+
+@media (max-width: 1115px){
+    .maintext1 {
+        margin-top: 200px;
+    }
+}
+
+@media (min-width:827px) and (max-width: 870px){
+    nav a {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        float: left;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    footer {
+        bottom: 0;
+        position: fixed;
+        margin-bottom: 0;
+        margin-top: 100px;
+    }
+}
+
+/*Esto sirve para hacer que la página se redimensione cuando se haga más pequeña
+y así adaptarla a pantallas más pequeñas, nivel 2*/
+
+@media (min-width:600px) and (max-width: 827px){
+    nav a {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        float: left;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .vids {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        bottom: 0;
+        position: fixed;
+        margin-bottom: 0;
+        margin-top: 150px;
+    }
+}
+
+/*Esto sirve para hacer que la página se redimensione cuando se haga más pequeña
+y así adaptarla a pantallas más pequeñas, nivel 3*/
+
+@media (min-width:300px) and (max-width: 600px){
+    nav a {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        float: left;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .vids {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        bottom: 0;
+        position: fixed;
+        margin-bottom: 0;
+        margin-top: 100px;
+    }
+
+    .fav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        align-items: center;
+    }
+}
+

@@ -1,0 +1,1 @@
+alert('Algunas cosas podrían no funcionar como deberían en esta página (...)')
