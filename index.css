@@ -1,0 +1,289 @@
+/*Este sería el archivo base para el index*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*body {
+    background-image: url(images/indexwallpaper.jpg);
+    background-color: lightgray;
+}*/
+
+@font-face {
+    font-family: "capture-it";
+    src: url(fonts/capture_it/Capture\ it.ttf);
+}
+
+@font-face {
+    font-family: "ag-stencil";
+    src: url(fonts/ag_stencil/AG-Stencil.ttf);
+}
+
+@font-face {
+    font-family: "army-rust";
+    src: url(fonts/army_rust/ARMY\ RUST.ttf);
+}
+
+@font-face {
+    font-family: "camouflage";
+    src: url(fonts/camouflage/CamouflageD.ttf);
+}
+
+@font-face {
+    font-family: "red-hands";
+    src: url(fonts/kg_red_hands/KGRedHands.ttf);
+}
+
+header {
+    background-color: rgba(38,50,56,255);
+    border-top: black 15px solid;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.indexbg {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    bottom: 0;
+    object-fit: cover;
+    margin: 0;
+    opacity: 0.7;
+    background-color: lightgray;
+}
+
+/*860px min*/
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+    font-weight: 100;
+    color: lightgray;
+    font-family: "army-rust";
+}
+
+img {
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.headermedia {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: "red-hands";
+    color: white;
+    width: 20%;
+    float: left;
+    text-align: center;
+    background-color: rgba(38,50,56,255);
+    margin: 0;
+    padding: 15px;
+    font-size:medium;
+    font-weight: 100;
+    border-bottom: black 4px solid;
+}
+
+#menuoption {
+    color: rgba(236,181,68,255)
+}
+
+nav a:hover {
+    text-decoration:underline;
+}
+
+/*.indexmenu {
+    background-color: lightgray;
+    text-decoration:none;
+    width: 100%;
+    color: black;
+    padding: 10px;
+}
+/*nav .menu1 {
+    background-color: antiquewhite;
+}*/
+
+main {
+    margin-top: 180px;
+    width: 100%;
+}
+
+.maintext1 p {
+    position: relative;
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+    font-family: "capture-it";
+}
+
+.maintext1 h2 {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
+    margin-left: 20px;
+    font-weight: 100;
+    font-family: "capture-it";
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(38,50,56,255);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    font-family: "red-hands";
+    font-weight: 100;
+}
+
+.mainmedia {
+    display: grid;
+    position: absolute;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    padding: 0;
+    margin: auto;
+    /*margin-left: 25px;*/
+    align-items: center;
+    column-gap: 20px;
+}
+
+.mainmedia img {
+    width: 100%;
+    align-items: center;
+    box-shadow: black 2px 2px 2px;
+}
+
+.mainmedia a img:hover {
+    transform:scale(1.05);
+    transition: all 0.5s ease
+}
+
+.footer p {
+    color: white;
+    text-align: right;
+    text-decoration:none!important;
+}
+
+/*Esto sirve para hacer que la página se redimensione cuando se haga más pequeña
+y así adaptarla a pantallas más pequeñas, nivel 1*/
+
+@media (max-width: 1115px){
+    .maintext1 {
+        margin-top: 200px;
+    }
+}
+
+@media (min-width:827px) and (max-width: 870px){
+    nav a {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        float: left;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .mainmedia {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        padding: 0;
+        margin: auto;
+        align-items: center;
+        column-gap: 20px;
+    }
+    
+    .maintext1 {
+        margin-top: 400px;
+    }
+
+    footer {
+        bottom: 0;
+        position: fixed;
+        margin-bottom: 0;
+        margin-top: 100px;
+    }
+}
+
+/*Esto sirve para hacer que la página se redimensione cuando se haga más pequeña
+y así adaptarla a pantallas más pequeñas, nivel 2*/
+
+@media (min-width:600px) and (max-width: 827px){
+    nav a {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        float: left;
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .mainmedia{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        padding: 0;
+        margin: auto;
+        align-items: center;
+        column-gap: 20px;
+        margin-bottom: 150px;
+    }
+    
+    .maintext1 {
+        margin-top: 460px;
+    }
+
+    footer {
+        bottom: 0;
+        position: fixed;
+        margin-bottom: 0;
+        margin-top: 150px;
+    }
+}
+
+/*Esto sirve para hacer que la página se redimensione cuando se haga más pequeña
+y así adaptarla a pantallas más pequeñas, nivel 3*/
+
+@media (min-width:300px) and (max-width: 600px){
+    nav a {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        float: left;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .mainmedia {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        padding: 0;
+        margin: auto;
+        align-items: center;
+        column-gap: 20px;
+    }
+    
+    .maintext1 {
+        margin-top: 470px;
+    }
+
+    footer {
+        bottom: 0;
+        position: fixed;
+        margin-bottom: 0;
+        margin-top: 100px;
+    }
+}
+
